@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gọi món - SPATULA & STAR</title>
+<link rel="stylesheet" href="../css/datban.css">  
+<link rel="stylesheet" href="../css/goi-mon.css">
+</head>
+<body>
+  <div class="dau-trang">
+    <header class="thanh-tren">
+      <div class="thuong-hieu">
+        <img src="../image/logo.jpg" alt="Logo" class="logo-img"> 
+        <span class="ten-nha-hang">SPATULA & STAR</span>
+        <span class="so-ban">Bàn: <span id="ten-ban-tren">1</span></span>
+      </div>
+      <a class="nut-order-tren" href="#phieu-order">
+        🛒 Thanh toán (<span id="so-mon-tren">0</span>) - <span id="tong-tren">0đ</span>
+      </a>
+    </header>
+    <nav class="thanh-muc">
+      <a href="#mon-chinh">🔴 Món chính</a>
+      <a href="#sup">🔵 Súp</a>
+      <a href="#spaghetti">🍝 Spaghetti</a>
+      <a href="#an-kem">🍟 Món ăn kèm</a>
+      <a href="#banh-man">🍔 Bánh mặn</a>
+      <a href="#trang-mieng">🍰 Tráng miệng</a>
+      <a href="#co-con">🍸 Đồ uống (Có cồn)</a>
+      <a href="#khong-con">🥤 Đồ uống (Không cồn)</a>
+    </nav>
+  </div>
+  <div class="khung">
+    <main class="thuc-don">
+      <section class="nhom-mon" id="mon-chinh">
+        <h2 class="ten-nhom">Món Chính (Main Courses)</h2>
+        <div class="luoi-mon">
+          <article class="mon">
+            <img src="../image/steak.jpg" alt="Beefsteak">
+            <h3 class="ten-mon">Beefsteak (Sốt tiêu / Rượu vang)</h3>
+            <p class="ten-phu">Beefsteak with Pepper / Red Wine Sauce</p>
+            <p class="gia">350.000đ</p>
+            <button type="button" class="nut-them" data-ten="Beefsteak (Sốt tiêu / Rượu vang)" data-gia="350000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+          <article class="mon">
+            <img src="../image/ca.jpg" alt="Salmon">
+            <h3 class="ten-mon">Cá hồi áp chảo sốt chanh leo</h3>
+            <p class="ten-phu">Pan-seared Salmon with Passion Fruit</p>
+            <p class="gia">280.000đ</p>
+            <button type="button" class="nut-them" data-ten="Cá hồi áp chảo sốt chanh leo" data-gia="280000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+          <article class="mon">
+            <img src="../image/ga.jpg" alt="Chicken">   
+            <h3 class="ten-mon">Đùi gà cuốn nấm</h3>
+            <p class="ten-phu">Mushroom Stuffed Chicken Thigh</p>
+            <p class="gia">210.000đ</p>
+            <button type="button" class="nut-them" data-ten="Đùi gà cuốn nấm" data-gia="210000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+          <article class="mon">
+            <img src="../image/suon.jpg" alt="Beefsteak">
+            <h3 class="ten-mon">Sườn nướng BBQ</h3>
+            <p class="ten-phu">BBQ Grilled Ribs</p>
+            <p class="gia">320.000đ</p>
+            <button type="button" class="nut-them" data-ten="Sườn nướng BBQ" data-gia="320000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+          <article class="mon">
+            <img src="../image/tom.jpg" alt="Shrimp">
+            <h3 class="ten-mon">Tôm nướng húng tây</h3>
+            <p class="ten-phu">Herb Grilled Shrimp</p>
+            <p class="gia">250.000đ</p>
+            <button type="button" class="nut-them" data-ten="Tôm nướng húng tây" data-gia="250000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+        </div>
+      </section>
+      <section class="nhom-mon" id="sup">
+        <h2 class="ten-nhom">Súp (Soups)</h2>
+        <div class="luoi-mon">
+          <article class="mon">
+            <img src="../image/supbi.jpg" alt="Pumpkin Soup">
+            <h3 class="ten-mon">Súp bí đỏ kem tươi</h3>
+            <p class="ten-phu">Creamy Pumpkin Soup</p>
+            <p class="gia">60.000đ</p>
+            <button type="button" class="nut-them" data-ten="Súp bí đỏ kem tươi" data-gia="60000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+          <article class="mon">
+            <img src="../image/supga.jpg" alt="Chicken Soup">
+            <h3 class="ten-mon">Súp gà</h3>
+            <p class="ten-phu">Chicken Soup</p>
+            <p class="gia">60.000đ</p>
+            <button type="button" class="nut-them" data-ten="Súp gà" data-gia="60000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+          <article class="mon">
+            <img src="../image/suphai.jpg" alt="Seafood Soup">
+            <h3 class="ten-mon">Súp hải sản</h3>
+            <p class="ten-phu">Seafood Soup</p>
+            <p class="gia">75.000đ</p>
+            <button type="button" class="nut-them" data-ten="Súp hải sản" data-gia="75000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+        </div>
+      </section>
+      <section class="nhom-mon" id="spaghetti">
+        <h2 class="ten-nhom">Spaghetti (Mì Ý)</h2>
+        <div class="luoi-mon">
+          <article class="mon">
+            <img src="../image/mibo.jpg" alt="Spaghetti Bolognese">
+            <h3 class="ten-mon">Mì bò bằm</h3>
+            <p class="ten-phu">Spaghetti Bolognese</p>
+            <p class="gia">160.000đ</p>
+            <button type="button" class="nut-them" data-ten="Mì bò bằm" data-gia="160000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+          <article class="mon">
+            <img src="../image/minam.jpg" alt="Mushroom Cream Pasta">
+            <h3 class="ten-mon">Mì kem nấm</h3>
+            <p class="ten-phu">Mushroom Cream Pasta</p>
+            <p class="gia">160.000đ</p>
+            <button type="button" class="nut-them" data-ten="Mì kem nấm" data-gia="160000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+          <article class="mon">
+            <img src="../image/miong.jpg" alt="Macaroni and Cheese">
+            <h3 class="ten-mon">Mì ống phô mai</h3>
+            <p class="ten-phu">Macaroni and Cheese</p>
+            <p class="gia">140.000đ</p>
+            <button type="button" class="nut-them" data-ten="Mì ống phô mai" data-gia="140000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+        </div>
+      </section>
+      <section class="nhom-mon" id="an-kem">
+        <h2 class="ten-nhom">Món Ăn Kèm (Side Dishes)</h2>
+        <div class="luoi-mon">
+          <article class="mon">
+            <img src="../image/khoai.jpg" alt="Crispy French Fries">
+            <h3 class="ten-mon">Khoai tây chiên</h3>
+            <p class="ten-phu">Crispy French Fries</p>
+            <p class="gia">70.000đ</p>
+            <button type="button" class="nut-them" data-ten="Khoai tây chiên" data-gia="70000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+          <article class="mon">
+            <img src="../image/khoailo.jpg" alt="Baked Potatoes">
+            <h3 class="ten-mon">Khoai bơ lò</h3>
+            <p class="ten-phu">Baked Potatoes</p>
+            <p class="gia">80.000đ</p>
+            <button type="button" class="nut-them" data-ten="Khoai bơ lò" data-gia="80000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+          <article class="mon">
+            <img src="../image/salad.jpg" alt="Vegetable Salad">
+            <h3 class="ten-mon">Salad rau củ sốt dấm</h3>
+            <p class="ten-phu">Vegetable Salad with Vinaigrette</p>
+            <p class="gia">90.000đ</p>
+            <button type="button" class="nut-them" data-ten="Salad rau củ sốt dấm" data-gia="90000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+          <article class="mon">
+            <img src="../image/saladqua.jpg" alt="Fruit Salad">
+            <h3 class="ten-mon">Salad hoa quả sốt chanh leo</h3>
+            <p class="ten-phu">Fruit Salad with Passion Fruit Sauce</p>
+            <p class="gia">100.000đ</p>
+            <button type="button" class="nut-them" data-ten="Salad hoa quả sốt chanh leo" data-gia="100000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+        </div>
+      </section>
+      <section class="nhom-mon" id="banh-man">
+        <h2 class="ten-nhom">Bánh Mặn (Savory Pastries)</h2>
+        <div class="luoi-mon">
+          <article class="mon">
+            <img src="../image/buger.jpg" alt="Burger Bò">
+            <h3 class="ten-mon">Burger Bò</h3>
+            <p class="ten-phu">Classic Beef Burger</p>
+            <p class="gia">140.000đ</p>
+            <button type="button" class="nut-them" data-ten="Burger Bò" data-gia="140000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+          <article class="mon">
+            <img src="../image/sandwich.jpg" alt="Sandwich Thịt Nguội">
+            <h3 class="ten-mon">Sandwich Thịt Nguội</h3>
+            <p class="ten-phu">Club Sandwich</p>
+            <p class="gia">120.000đ</p>
+            <button type="button" class="nut-them" data-ten="Sandwich Thịt Nguội" data-gia="120000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+          <article class="mon">
+            <img src="../image/tacos.jpg" alt="Tacos Gà / Bò">
+            <h3 class="ten-mon">Tacos Gà / Bò</h3>
+            <p class="ten-phu">Mexican Tacos</p>
+            <p class="gia">130.000đ</p>
+            <button type="button" class="nut-them" data-ten="Tacos Gà / Bò" data-gia="130000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+        </div>
+      </section>
+      <section class="nhom-mon" id="trang-mieng">
+        <h2 class="ten-nhom">Tráng Miệng (Desserts)</h2>
+        <div class="luoi-mon">
+          <article class="mon">
+            <img src="../image/tira.jpg" alt="Tiramisu">
+            <h3 class="ten-mon">Bánh Tiramisu</h3>
+            <p class="ten-phu">Tiramisu</p>
+            <p class="gia">95.000đ</p>
+            <button type="button" class="nut-them" data-ten="Bánh Tiramisu" data-gia="95000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+          <article class="mon">
+            <img src="../image/che.jpg" alt="Cheesecake">
+            <h3 class="ten-mon">Bánh Phô Mai Nướng</h3>
+            <p class="ten-phu">Baked Cheesecake</p>
+            <p class="gia">105.000đ</p>
+            <button type="button" class="nut-them" data-ten="Bánh Phô Mai Nướng" data-gia="105000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+          <article class="mon">
+            <img src="../image/kem.jpg" alt="Kem Vanilla">
+            <h3 class="ten-mon">Kem Vanilla Trái Cây</h3>
+            <p class="ten-phu">Vanilla Ice Cream with Fruits</p>
+            <p class="gia">80.000đ</p>
+            <button type="button" class="nut-them" data-ten="Kem Vanilla Trái Cây" data-gia="80000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+        </div>
+      </section>
+      <section class="nhom-mon" id="co-con">
+        <h2 class="ten-nhom">Đồ Uống Có Cồn (Alcoholic Beverages)</h2>
+        <div class="luoi-mon">
+          <article class="mon">
+            <img src="../image/bia.jpg" alt="Bia Tươi">            
+            <h3 class="ten-mon">Bia Tươi Tháp/Ly</h3>
+            <p class="ten-phu">Draft Beer</p>
+            <p class="gia">60.000đ</p>
+            <button type="button" class="nut-them" data-ten="Bia Tươi Tháp/Ly" data-gia="60000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+          <article class="mon">
+            <img src="../image/margarita.jpg" alt="Margarita">
+            <h3 class="ten-mon">Margarita Cocktail</h3>
+            <p class="ten-phu">Margarita Cocktail</p>
+            <p class="gia">150.000đ</p>
+            <button type="button" class="nut-them" data-ten="Margarita Cocktail" data-gia="150000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+          <article class="mon">
+            <img src="../image/mojito.jpg" alt="Mojito">
+            <h3 class="ten-mon">Mojito Chanh Bạc Hà</h3>
+            <p class="ten-phu">Classic Mojito Cocktail</p>
+            <p class="gia">140.000đ</p>
+            <button type="button" class="nut-them" data-ten="Mojito Chanh Bạc Hà" data-gia="140000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+          <article class="mon">
+            <img src="../image/pina-colada.jpg" alt="Piña Colada">
+            <h3 class="ten-mon">Piña Colada Cocktail</h3>
+            <p class="ten-phu">Piña Colada Cocktail</p>
+            <p class="gia">160.000đ</p>
+            <button type="button" class="nut-them" data-ten="Piña Colada Cocktail" data-gia="160000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+          <article class="mon">
+            <img src="../image/old-fashioned.jpg" alt="Old Fashioned"> 
+            <h3 class="ten-mon">Old Fashioned Cocktail</h3>
+            <p class="ten-phu">Old Fashioned Cocktail</p>
+            <p class="gia">180.000đ</p>
+            <button type="button" class="nut-them" data-ten="Old Fashioned Cocktail" data-gia="180000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+        </div>
+      </section>
+      <section class="nhom-mon" id="khong-con">
+        <h2 class="ten-nhom">Đồ Uống Không Cồn (Non-Alcoholic)</h2>
+        <div class="luoi-mon">
+          <article class="mon">
+            <img src="../image/h2o.jpg" alt="Nước suối">
+            <h3 class="ten-mon">Nước Suối Tinh Khiết</h3>
+            <p class="ten-phu">Mineral Water</p>
+            <p class="gia">20.000đ</p>
+            <button type="button" class="nut-them" data-ten="Nước Suối Tinh Khiết" data-gia="20000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+          <article class="mon">
+            <img src="../image/cam.jpg" alt="Nước ép cam">
+            <h3 class="ten-mon">Nước Ép Cam Tươi</h3>
+            <p class="ten-phu">Fresh Orange Juice</p>
+            <p class="gia">65.000đ</p>
+            <button type="button" class="nut-them" data-ten="Nước Ép Cam Tươi" data-gia="65000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+          <article class="mon">
+            <img src="../image/hau.jpg" alt="Nước ép dưa hấu">
+            <h3 class="ten-mon">Nước Ép Dưa Hấu</h3>
+            <p class="ten-phu">Watermelon Juice</p>
+            <p class="gia">60.000đ</p>
+            <button type="button" class="nut-them" data-ten="Nước Ép Dưa Hấu" data-gia="60000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+          <article class="mon">
+            <img src="../image/dao.jpg" alt="Trà Đào Cam Sả">
+            <h3 class="ten-mon">Trà Đào Cam Sả</h3>
+            <p class="ten-phu">Peach Orange Lemongrass Tea</p>
+            <p class="gia">55.000đ</p>
+            <button type="button" class="nut-them" data-ten="Trà Đào Cam Sả" data-gia="55000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+          <article class="mon">
+            <img src="../image/phe.jpg" alt="Cà Phê Đen/Sữa Đá">
+            <h3 class="ten-mon">Cà Phê Đen/Sữa Đá</h3>
+            <p class="ten-phu">Vietnamese Iced Coffee</p>
+            <p class="gia">45.000đ</p>
+            <button type="button" class="nut-them" data-ten="Cà Phê Đen/Sữa Đá" data-gia="45000" onclick="themMon(this)">Thêm vào món</button>
+          </article>
+        </div>
+      </section>
+    </main>
+    <aside class="phieu-order" id="phieu-order">
+      <h2 class="tieu-de-nho">Chọn bàn</h2>
+      <div class="luoi-ban">
+        <button type="button" class="nut-ban" id="nut-ban-1" onclick="chonBan(1)">1</button>
+        <button type="button" class="nut-ban" id="nut-ban-2" onclick="chonBan(2)">2</button>
+        <button type="button" class="nut-ban" id="nut-ban-3" onclick="chonBan(3)">3</button>
+        <button type="button" class="nut-ban" id="nut-ban-4" onclick="chonBan(4)">4</button>
+        <button type="button" class="nut-ban" id="nut-ban-5" onclick="chonBan(5)">5</button>
+        <button type="button" class="nut-ban" id="nut-ban-6" onclick="chonBan(6)">6</button>
+        <button type="button" class="nut-ban" id="nut-ban-7" onclick="chonBan(7)">7</button>
+        <button type="button" class="nut-ban" id="nut-ban-8" onclick="chonBan(8)">8</button>
+        <button type="button" class="nut-ban" id="nut-ban-9" onclick="chonBan(9)">9</button>
+        <button type="button" class="nut-ban" id="nut-ban-10" onclick="chonBan(10)">10</button>
+      </div>
+      <p class="chu-thich">
+        <span class="cham cham-dang-chon"></span> Đang chọn
+        <span class="cham cham-co-order"></span> Bàn đã có món
+      </p>
+      <h2 class="tieu-de-nho" id="tieu-de-order">Order - Bàn 1</h2>
+      <div id="danh-sach-order"></div>
+      <p class="trong" id="bao-trong">Chưa có món nào. Bấm "Thêm vào món" ở thực đơn.</p>
+      <p class="tong">
+        <span>Tổng cộng (<span id="so-mon">0</span> món)</span>
+        <strong id="tong-tien">0đ</strong>
+      </p>
+      <button type="button" class="nut nut-xac-nhan" onclick="xacNhan()">Xác nhận gọi món</button>
+      <a class="nut nut-thanh-toan" href="thanh-toan.html">Thanh toán</a>
+      <button type="button" class="nut nut-xoa-het" onclick="xoaOrder()">Xóa toàn bộ order</button>
+    </aside>
+  </div>
+  <div class="thong-bao" id="thong-bao"></div>
+ <script src="../js/goi-mon.js"></script>
+</body>
+</html>
