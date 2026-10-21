@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>SPATULA & STAR - Đăng nhập</title>
+  <link rel="stylesheet" href="../css/dangnhap.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="../image/logo.jpg" alt="Logo" class="logo-img">
+                SPATULA & STAR
+            </div>
+            <div class="nav-links">
+                <a href="dangnhap.html">Trang chủ</a>
+                <a href="goi-mon.html">Thực đơn</a>
+                <a href="datban.html">Ca làm việc</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="left-box">
+            <h2>SPATULA & STAR</h2>
+            <p>Hệ thống nội bộ phục vụ nhân viên order, thanh toán và quản lý ca trực tại nhà hàng.</p>
+        </div>
+        <div class="right-box">
+            <div class="login-card">
+                <h2>Đăng Nhập</h2>
+                <p>Hệ thống quản trị nội bộ nhân viên</p>
+                <div id="realTimeClock"></div>
+                <div id="errorMsg" style="display: none;">Mã nhân viên hoặc mật khẩu không chính xác!</div>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label>Mã nhân viên (ID):</label>
+                      
+                        <input type="text" id="empId" value="ADMIN" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Mật khẩu (PIN):</label>
+                   
+                        <input type="password" id="password" value="123456" required>
+                        <button type="button" id="toggleBtn">Hiện mật khẩu</button>
+                    </div>
+                    <button type="submit" id="submitBtn">VÀO CA LÀM VIỆC</button>
+                    
+                    <!-- DÒNG GHI CHÚ CHO GIẢNG VIÊN -->
+                    <p style="margin-top: 15px; font-size: 13px; color: #666; font-style: italic;">
+                       
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+<script src="../js/dangnhap.js"></script>
+</body>
+</html>
